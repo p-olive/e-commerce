@@ -1,0 +1,5 @@
+<div *ngFor="let product of shoppingCart">
+    <app-products-in-cart [product]="product" 
+    (removedFromCart)="handleRemovedFromCart($event)"
+    ></app-products-in-cart>
+</div>

@@ -1,0 +1,6 @@
+<form *ngFor="let product of productShelf">
+    <app-product [product]="product"
+    (addedToCart)="handleAddedToCart($event)"
+    ></app-product>
+</form>
+
